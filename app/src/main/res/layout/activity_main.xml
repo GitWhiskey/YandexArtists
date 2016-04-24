@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main_layout"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activities.MainActivity" android:background="#ffffff">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/error_layout"
+            android:gravity="center_horizontal" android:layout_margin="5dp"
+            android:visibility="gone">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Error"
+                android:id="@+id/error_info" android:gravity="center_horizontal"/>
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_tryagain_text"
+                android:id="@+id/btn_try_again"
+                android:textAllCaps="false"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/error_info"
+                android:layout_toLeftOf="@+id/separator"
+                android:onClick="onClick"
+                android:layout_alignTop="@+id/btn_load_old"
+                android:layout_alignBottom="@+id/btn_load_old" style="@style/AppTheme"/>
+        <FrameLayout
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:id="@+id/separator"
+                android:layout_centerHorizontal="true">
+        </FrameLayout>
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_loadfile_text"
+                android:id="@+id/btn_load_old"
+                android:layout_centerHorizontal="true"
+                android:textAllCaps="false"
+                android:layout_below="@+id/error_info"
+                android:layout_toRightOf="@+id/separator"
+                android:onClick="onClick" style="@style/AppTheme"/>
+    </RelativeLayout>
+    <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar" android:layout_gravity="center"
+            android:visibility="gone" android:indeterminateDrawable="@drawable/progress"/>
+    <ListView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/list_artists"
+              android:animateLayoutChanges="true">
+    </ListView>
+</LinearLayout>

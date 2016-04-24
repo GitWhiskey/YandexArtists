@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Yandex.Artists</string>
+    <string name="keyword_genres">Жанр:&#160;</string>
+    <string name="keyword_albums">Альбомов:&#160;</string>
+    <string name="keyword_tracks">Песен:&#160;</string>
+    <string name="keyword_link">Официальный сайт:</string>
+    <string name="error_download">Произошла ошибка при загрузке данных из сети. Пожалуйста попробуйте позже.</string>
+    <string name="error_parse">Произошла ошибка при загрузке данных из файла. Пожалуйста подключитесь к интернету
+        и скачайте файл снова.</string>
+    <string name="error_no_inet">Нет подключения к интернету. Пожалуйста, попробуйте зайти позже.</string>
+    <string name="error_no_inet_loadold">Нет подключения к интернету. Пожалуйста, попробуйте зайти позже,
+        или загрузите старые данные.</string>
+    <string name="error_no_inet_toast">Нет подключения к интернету. Могут возникнуть проблемы при загрузке
+        данных.</string>
+    <string name="info_inet_isback_toast">Подключение к интернету вновь установлено.</string>
+    <string name="btn_loadfile_text">Загрузить старый файл</string>
+    <string name="btn_tryagain_text">Попробовать снова</string>
+
+</resources>

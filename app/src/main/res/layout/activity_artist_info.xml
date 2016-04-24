@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activities.ArtistInfoActivity"
+        android:orientation="vertical"
+        android:id="@+id/artist_info_main">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical" android:background="@drawable/textline">
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/artist_info_image" android:background="@drawable/textline"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/artist_info_descrip" android:padding="5dp" android:gravity="fill"
+                    android:background="@drawable/textline" android:textIsSelectable="true"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/keyword_genres"
+                    android:id="@+id/artist_info_genres" android:padding="5dp" android:background="#ffffff"
+                    android:textIsSelectable="true"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/keyword_albums"
+                    android:id="@+id/artist_info_albums" android:padding="5dp" android:background="#ffffff"
+                    android:textIsSelectable="true"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/keyword_tracks"
+                    android:id="@+id/artist_info_tracks" android:padding="5dp" android:background="@drawable/textline"
+                    android:textIsSelectable="true"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/artist_info_linkheader" android:padding="5dp" android:background="#ffffff"
+                    android:text="@string/keyword_link" android:textIsSelectable="true"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/artist_info_link" android:paddingLeft="15dp" android:autoLink="web"
+                    android:paddingBottom="5dp" android:textIsSelectable="true"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
