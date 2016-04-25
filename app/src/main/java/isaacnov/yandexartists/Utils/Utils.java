@@ -13,7 +13,7 @@ import android.os.Environment;
 public class Utils {
 
     /** Ссылка на файл JSON с данными об исполнителях */
-    public static final String FILE_URL = "http://download.cdn.yandex.net/mobilization-2016/artists1.json";
+    public static final String FILE_URL = "http://download.cdn.yandex.net/mobilization-2016/artists.json";
     /** Директория в памяти устройства, где будет храниться скаченный файл */
     public static final String DEST_DIR = Environment.getExternalStorageDirectory().toString() + "/YandexArtists";
     /** Путь к скаченному файлу */
